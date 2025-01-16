@@ -1,0 +1,32 @@
+/* navbar.css - Estilo para a barra de navegação */
+#navbar {
+        background: rgba(24, 0, 43, 0.54);
+    padding: 11px 0; /* Espaçamento em cima e embaixo */
+    text-align: right; /* Centraliza os itens */
+    position: fixed; /* Fixa o navbar na tela */
+    top: 25px; /* Fica 20px abaixo do topo da tela */
+    left: 7%; /* Alinha ao lado esquerdo da tela */
+    width: 85%; /* Ocupa toda a largura da tela */
+    z-index: 1000; /* Garante que o navbar fique por cima de outros conteúdos */
+    border-radius: 40px; /* Bordas arrendondadas*/
+}
+
+#navbar ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o padding */
+}
+
+#navbar ul li {
+    display: inline; /* Os itens da lista ficam na mesma linha */
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255); /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+#navbar ul li a:hover {
+    color: #ddd; /* Cor do texto quando o link é hover */
+}

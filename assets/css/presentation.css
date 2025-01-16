@@ -1,0 +1,53 @@
+/* presentation.css - Estilo para a seção de Apresentação */
+
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=JotiOne&display=swap');
+
+/* Estilo para o corpo da seção */
+#presentation {
+  background-color: #000; /* Cor de fundo sólido */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 387px 20px; /* Padding ajustado para responsividade */
+}
+
+/* Estilo para o título */
+#presentation h1 {
+  font-size: 4.5rem; /* Tamanho ajustado para ser responsivo */
+  font-family: "Bangers", sans-serif;
+  color: #fff; /* Cor sólida para o texto */
+  margin-bottom: 20px; /* Espaço entre o título e o texto */
+  transition: transform 0.3s ease-out; /* Suaviza o efeito de transformação */
+  text-shadow: none; /* Remove sombras */
+}
+
+/* Efeito de hover no título */
+#presentation h1:hover {
+  transform: scale(1.2); /* Aumenta o título ao passar o mouse */
+}
+
+/* Estilo para o parágrafo */
+#presentation p {
+  font-size: 1.25rem; /* Tamanho relativo para melhor escala em dispositivos menores */
+  font-family: 'JotiOne', sans-serif; 
+  color: #fff;
+  margin: 0 auto;
+  max-width: 800px; /* Limita a largura para legibilidade */
+  line-height: 1.6; /* Melhora o espaçamento entre linhas */
+  text-shadow: none; /* Remove sombra */
+  animation: fadeIn 1.5s ease-in-out; /* Animação de entrada */
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

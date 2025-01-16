@@ -1,0 +1,49 @@
+/* index.css - Reset de margin, padding e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos para a section geral (sem display flex) */
+section {
+    padding: 40px 20px;
+    margin: 0px 0;
+    border-top: 0px solid #d3d3d3;
+}
+
+/* Flexbox para a section específica */
+#about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Outras estilizações conforme necessário */
+
+.linha {
+    border: none;            /* Remove qualquer borda padrão */
+    border-top: 2px solid #ffffff; /* Define uma linha preta com 2px de altura */
+    margin: 0px 0;          /* Define margem em cima e embaixo */
+}
+

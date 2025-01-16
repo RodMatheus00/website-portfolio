@@ -1,0 +1,26 @@
+/* technology.css - Estilo para a seção de Tecnologias */
+#technologies {
+    padding: 40px 20px;
+    background-color: #000000;
+}
+
+#technologies h2 {
+    font-size: 36px;
+    padding: 0% 0% 0% 0%;
+    text-align: center;
+    color: #ffffff;
+}
+
+#technologies ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#technologies ul li {
+    font-size: 20px;
+    color: #555;
+    margin: 10px 15px;
+}

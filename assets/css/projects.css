@@ -1,0 +1,32 @@
+/* projects.css - Estilo para a seção de Projetos */
+#projects {
+    padding: 80px 20px 85px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-gap: 70px; /* Espaço entre as colunas e linhas */
+}
+
+#projects h2 {
+    font-size: 3rem;
+    padding: 0% 0% 0% 0%;
+    text-align: center;
+    color: #ffffff;
+    grid-column: span 3;
+}
+
+#projects .project {
+    text-align: center;
+}
+
+#projects .project img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#projects .project p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
