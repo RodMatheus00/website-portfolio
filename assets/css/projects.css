@@ -1,7 +1,7 @@
 /* projects.css - Estilo para a seção de Projetos */
 #projects {
-    padding: 80px 20px 85px;
-    background-color: #000000;
+    padding: 90px 20px 85px 2px;
+    background-color: #08000d;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
     grid-gap: 70px; /* Espaço entre as colunas e linhas */
@@ -28,5 +28,5 @@
 #projects .project p {
     font-size: 18px;
     color: #333;
-    margin-top: 10px;
+    margin-top: 11px;
 }

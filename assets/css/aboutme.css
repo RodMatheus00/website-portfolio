@@ -1,25 +1,25 @@
 /* aboutme.css - Estilo para a seção Sobre Mim */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
 #about-me {
-    background-color: #000000;
+    background-color: #08000d;
     padding: 0px;
     display: flex;
     flex-wrap: wrap; /* Permite quebra de linha para telas menores */
 }
 
 #about-me .image-container {
-    flex: 0 0 40%; /* A imagem ocupa 40% da largura */
-    max-width: 40%; /* Limita a largura máxima da imagem */
-    text-align: center;
+    padding: 0 0 0%; /* A imagem ocupa 40% da largura */
+    max-width: 36%; /* Limita a largura máxima da imagem */
 }
 
 #about-me .image-container img {
-    width: 100%;
     height: 905px;
     padding: 0px;
 }
 
 #about-me .text-container {
-    flex: 1 1 55%; /* O texto ocupa 55% da largura */
+    flex: 1 1 41%; /* O texto ocupa 55% da largura */
     color: #ffffff;
 }
 
@@ -32,6 +32,7 @@
 
 #about-me p {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
     padding: 0px 0px 0px 100px;
 }

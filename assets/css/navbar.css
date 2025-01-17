@@ -1,32 +1,118 @@
-/* navbar.css - Estilo para a barra de navegação */
+/* navbar.css - Estilo ajustado para a barra de navegação */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    height: 15vh;
+    width: 100%;
+    pointer-events: none;
+    top: 0px;
+}
+
 #navbar {
-        background: rgba(24, 0, 43, 0.54);
-    padding: 11px 0; /* Espaçamento em cima e embaixo */
-    text-align: right; /* Centraliza os itens */
-    position: fixed; /* Fixa o navbar na tela */
-    top: 25px; /* Fica 20px abaixo do topo da tela */
-    left: 7%; /* Alinha ao lado esquerdo da tela */
-    width: 85%; /* Ocupa toda a largura da tela */
-    z-index: 1000; /* Garante que o navbar fique por cima de outros conteúdos */
-    border-radius: 40px; /* Bordas arrendondadas*/
+    display: flex;
+    pointer-events: all;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    max-height: 60px;
+    height: 10vh;
+    padding: 0px 25px;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between; /* Alinha os itens nas extremidades */
+    background: rgba(24, 0, 43, 0.54); /* Nova cor de fundo com a opacidade ajustada */
+    backdrop-filter: blur(10px); /* Aplica o desfoque no fundo atrás da navbar */
+}
+
+#navbar h1 {
+    cursor: pointer;
+    color: white;
+    margin: 0; /* Remove qualquer margin que possa interferir no alinhamento */
+}
+
+#navbar h1 .dev {
+    color: #6a00cc; /* Cor roxa diferente para 'DEV' */
+}
+
+#navbar h1:hover .dev {
+    filter: brightness(1.5); /* Aumenta o brilho para 1.5x quando passa o mouse */
 }
 
 #navbar ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    margin: 0; /* Remove a margem */
-    padding: 0; /* Remove o padding */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha os itens para a direita */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar ul li {
-    display: inline; /* Os itens da lista ficam na mesma linha */
-    margin: 0 15px; /* Espaçamento entre os itens */
+    margin: 0 15px;
 }
 
 #navbar ul li a {
-    color: rgb(255, 255, 255); /* Cor do texto */
-    font-size: 16px; /* Tamanho da fonte */
+    color: white;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    position: relative;
 }
 
 #navbar ul li a:hover {
-    color: #ddd; /* Cor do texto quando o link é hover */
+    color: #ddd;
+}
+
+#navbar ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.514);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+#navbar ul li a:hover::after {
+    width: 100%;
+}
+
+#navbar-link {
+    width: 300px;
+}
+
+#navbar-link > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar-link a {
+    color: white;
+}
+
+#navbar-link a hr {
+    opacity: 0;
+    height: 1px;
+    border: 0px;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.514), transparent);
+    width: 100%;
+}
+
+#navbar-link a:hover hr {
+    opacity: 1;
+}
+
+#phone-nav-link {
+    display: none;
+}
+
+#phone-menu {
+    display: none;
+    pointer-events: all;
 }

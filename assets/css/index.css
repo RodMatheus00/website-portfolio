@@ -9,7 +9,7 @@
 body {
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #000000;
+    background-color: #08000d;
     color: #000000;
     overflow-x: hidden;
 }
@@ -46,4 +46,6 @@ section {
     border-top: 2px solid #ffffff; /* Define uma linha preta com 2px de altura */
     margin: 0px 0;          /* Define margem em cima e embaixo */
 }
+
+
 

@@ -2,15 +2,16 @@
 
 /* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=JotiOne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
 /* Estilo para o corpo da seção */
 #presentation {
-  background-color: #000; /* Cor de fundo sólido */
+  background-image: url('../images/bg.webp'); /* Substitua pelo caminho correto da imagem */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 387px 20px; /* Padding ajustado para responsividade */
+  padding: 390px 20px; /* Padding ajustado para responsividade */
 }
 
 /* Estilo para o título */
