@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
 }
 
 /* Estilos gerais */
 body {
-    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: #08000d;
     color: #000000;
