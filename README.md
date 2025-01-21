@@ -21,3 +21,5 @@ Bem-vindo ao meu portfólio! Sou um Analista de Dados, Automatizador de Processo
 ## Acesso ao meu portfolio
 
 [**Meu Portfolio Link**](https://rodmatheus00.github.io/website-portfolio/)
+
+Obs.: Ainda não está responsivo.
