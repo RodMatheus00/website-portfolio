@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             modalTechIcons.innerHTML = '';
             techIcons.forEach(icon => {
                 const img = document.createElement('img');
-                img.src = `../assets/images/icon/${icon}.png`;
+                img.src = `../portfolio/assets/images/icon/${icon}.png`;
                 img.alt = icon;
                 img.classList.add('tech-icon');
                 modalTechIcons.appendChild(img);
