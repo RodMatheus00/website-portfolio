@@ -1,47 +1,40 @@
-/* presentation.css - Estilo para a seção de Apresentação */
-
-/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=JotiOne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
-/* Estilo para o corpo da seção */
 #presentation {
-  background-image: url('../images/bg.webp'); /* Substitua pelo caminho correto da imagem */
+  background-image: url('../images/bg.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-top: 1px solid rgba(255, 255, 255, 0.151);
   text-align: center;
-  padding: 390px 20px; /* Padding ajustado para responsividade */
+  padding: 404px 20px;
 }
 
-/* Estilo para o título */
 #presentation h1 {
-  font-size: 4.5rem; /* Tamanho ajustado para ser responsivo */
+  font-size: 4.5rem;
   font-family: "Bangers", sans-serif;
-  color: #fff; /* Cor sólida para o texto */
-  margin-bottom: 20px; /* Espaço entre o título e o texto */
-  transition: transform 0.3s ease-out; /* Suaviza o efeito de transformação */
-  text-shadow: none; /* Remove sombras */
+  color: #fff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-out;
+  text-shadow: none;
 }
 
-/* Efeito de hover no título */
 #presentation h1:hover {
-  transform: scale(1.2); /* Aumenta o título ao passar o mouse */
+  transform: scale(1.2);
 }
 
-/* Estilo para o parágrafo */
 #presentation p {
-  font-size: 1.25rem; /* Tamanho relativo para melhor escala em dispositivos menores */
+  font-size: 1.25rem;
   font-family: 'JotiOne', sans-serif; 
   color: #fff;
   margin: 0 auto;
-  max-width: 800px; /* Limita a largura para legibilidade */
-  line-height: 1.6; /* Melhora o espaçamento entre linhas */
-  text-shadow: none; /* Remove sombra */
-  animation: fadeIn 1.5s ease-in-out; /* Animação de entrada */
+  max-width: 800px;
+  line-height: 1.6;
+  text-shadow: none;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Animação de entrada */
 @keyframes fadeIn {
   0% {
     opacity: 0;

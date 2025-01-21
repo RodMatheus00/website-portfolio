@@ -1,25 +1,25 @@
-/* aboutme.css - Estilo para a seção Sobre Mim */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
 #about-me {
     background-color: #08000d;
     padding: 0px;
     display: flex;
-    flex-wrap: wrap; /* Permite quebra de linha para telas menores */
+    border-top: 1px solid rgba(255, 255, 255, 0.151);
+    flex-wrap: wrap;
 }
 
 #about-me .image-container {
-    padding: 0 0 0%; /* A imagem ocupa 40% da largura */
-    max-width: 36%; /* Limita a largura máxima da imagem */
+    padding: 0 0 0%;
+    max-width: 36%;
 }
 
 #about-me .image-container img {
-    height: 905px;
+    height: 944px;
     padding: 0px;
 }
 
 #about-me .text-container {
-    flex: 1 1 41%; /* O texto ocupa 55% da largura */
+    flex: 1 1 41%;
     color: #ffffff;
 }
 

@@ -10,32 +10,31 @@ footer ul {
     padding: 0;
     margin: 20px 0;
     display: flex;
-    justify-content: center; /* Alinha os ícones horizontalmente */
-    gap: 25%; /* Espaçamento entre os ícones */
+    justify-content: center;
+    gap: 25%;
 }
 
 footer ul li img {
-    width: 50px; /* Tamanho fixo dos ícones */
+    width: 50px;
     height: auto;
-    transition: transform 0.3s ease; /* Efeito de hover */
+    transition: transform 0.3s ease;
 }
 
 footer ul li img:hover {
-    transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .linha-2 {
-    border: none;
-    border-top: 1px solid #797979;
-    width: 75%;
-    margin: 0 auto;
+    height: 1px;
+    border: 0px;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.151), transparent);
+    width: 100%;
 }
 
-/* Alinha os dois <p> lado a lado */
 .footer-text {
     display: flex;
-    justify-content: center; /* Alinha horizontalmente */
-    gap: 60%; /* Espaçamento entre os textos */
+    justify-content: center;
+    gap: 60%;
     margin-top: 10px;
 }
 

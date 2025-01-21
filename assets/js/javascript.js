@@ -43,26 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    const projectImagesMap = {
-        'power-bi-1': '../Portfolio/assets/images/projetos/power bi 1.png',
-        'power-bi-2': '../Portfolio/assets/images/projetos/power bi 2.1.png',
-        'power-bi-3': '../Portfolio/assets/images/projetos/power bi 3.1.png',
-        'power-bi-4': '../Portfolio/assets/images/projetos/power bi 4.1.png',
-        'power-bi-5': '../Portfolio/assets/images/projetos/power bi 5.1.png',
-        'site-6': '../Portfolio/assets/images/projetos/site 6.1.png'
-    };
-
-    // Mapeamento dos ícones das tecnologias associadas a cada projeto
-    const techIconsMap = {
-        'power-bi-1': ['powerbi-icon.png', 'sql-icon.png'], // Exemplos de ícones
-        'power-bi-2': ['powerbi-icon.png', 'excel-icon.png'],
-        'power-bi-3': ['powerbi-icon.png', 'sql-icon.png'],
-        'power-bi-4': ['powerbi-icon.png'],
-        'power-bi-5': ['powerbi-icon.png', 'python-icon.png'],
-        'site-6': ['html-icon.png', 'css-icon.png', 'js-icon.png']
-    };
-
-    // Função para abrir o modal e preencher os dados do projeto
     function openModal(projeto) {
         var modal = document.getElementById("modal");
         var modalImage = document.getElementById("modal-image");
@@ -76,8 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const projectTitle = projectElement.getAttribute('data-project-title');
             const description = projectElement.getAttribute('data-description');
             const observation = projectElement.getAttribute('data-observation');
+            const projectImage = projectElement.getAttribute('data-image');
+            const techIcons = projectElement.getAttribute('data-tech-icons').split(',');
 
-            modalImage.src = projectImagesMap[projeto];
+            modalImage.src = projectImage;
             modalDescription.innerHTML = `
                 <h3>${title}</h3>
                 <p><strong>${projectTitle}</strong></p>
@@ -85,12 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p><i>${observation}</i></p>
             `;
 
-            // Adicionando os ícones das tecnologias ao modal
-            const icons = techIconsMap[projeto] || [];
-            modalTechIcons.innerHTML = ''; // Limpa os ícones anteriores
-            icons.forEach(icon => {
+            modalTechIcons.innerHTML = '';
+            techIcons.forEach(icon => {
                 const img = document.createElement('img');
-                img.src = `path/to/icons/${icon}`; // Ajuste o caminho para onde seus ícones estão
+                img.src = `/assets/images/icon/${icon}.png`;
                 img.alt = icon;
                 img.classList.add('tech-icon');
                 modalTechIcons.appendChild(img);
@@ -104,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "flex";
     }
 
-    // Função para fechar o modal
     function closeModal() {
         var modal = document.getElementById("modal");
         modal.style.display = "none";
