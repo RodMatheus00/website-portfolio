@@ -25,7 +25,7 @@
 
 #presentation p {
   font-size: 1.25rem;
-  font-family: 'JotiOne', sans-serif; 
+  font-family: 'JotiOne', sans-serif;
   color: #fff;
   margin: 0 auto;
   max-width: 800px;
@@ -42,5 +42,55 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Media Queries para responsividade */
+
+/* Para dispositivos com telas de até 1024px */
+@media screen and (max-width: 1024px) {
+  #presentation {
+    padding: 200px 20px;  /* Reduzir o padding para telas menores */
+  }
+
+  #presentation h1 {
+    font-size: 3.5rem;  /* Reduzir o tamanho da fonte do título */
+  }
+
+  #presentation p {
+    font-size: 1.125rem;  /* Ajustar o tamanho da fonte do parágrafo */
+    max-width: 700px;  /* Ajustar a largura máxima do parágrafo */
+  }
+}
+
+/* Para dispositivos com telas de até 768px */
+@media screen and (max-width: 768px) {
+  #presentation {
+    padding: 150px 20px;  /* Ajustar padding */
+  }
+
+  #presentation h1 {
+    font-size: 3rem;  /* Reduzir mais o tamanho do título */
+  }
+
+  #presentation p {
+    font-size: 1rem;  /* Ajustar o tamanho da fonte */
+    max-width: 600px;  /* Ajustar a largura máxima */
+  }
+}
+
+/* Para dispositivos com telas de até 480px */
+@media screen and (max-width: 480px) {
+  #presentation {
+    padding: 100px 20px;  /* Ajustar padding para telas muito pequenas */
+  }
+
+  #presentation h1 {
+    font-size: 2.5rem;  /* Diminuir o tamanho da fonte do título */
+  }
+
+  #presentation p {
+    font-size: 0.875rem;  /* Reduzir ainda mais o tamanho da fonte */
+    max-width: 90%;  /* Ajustar a largura máxima do parágrafo */
   }
 }

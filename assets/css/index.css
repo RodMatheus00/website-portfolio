@@ -53,3 +53,86 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(0deg, #ff0000, #ff7f00);
 }
+
+/* Media Queries para responsividade */
+
+/* Para dispositivos com telas de até 1024px */
+@media screen and (max-width: 1024px) {
+    #about-me {
+        flex-direction: column; /* Mudar para coluna em telas menores */
+        align-items: flex-start; /* Alinhar itens à esquerda */
+        gap: 20px;
+    }
+
+    #about-me img {
+        max-width: 100%; /* Garantir que a imagem não ultrapasse a largura */
+        height: auto;
+    }
+
+    section {
+        padding: 30px 15px; /* Ajustar o padding das seções */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.8rem; /* Ajustar o tamanho das fontes */
+    }
+}
+
+/* Para dispositivos com telas de até 768px */
+@media screen and (max-width: 768px) {
+    #about-me {
+        flex-direction: column; /* Garantir que o conteúdo da seção sobre mim seja em coluna */
+        align-items: center; /* Centralizar conteúdo em telas menores */
+        gap: 15px;
+    }
+
+    section {
+        padding: 25px 10px; /* Reduzir padding */
+    }
+
+    h1 {
+        font-size: 2rem; /* Ajustar o tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Ajustar o tamanho do subtítulo */
+    }
+
+    h3 {
+        font-size: 1.4rem; /* Ajustar o tamanho dos outros títulos */
+    }
+}
+
+/* Para dispositivos com telas de até 480px */
+@media screen and (max-width: 480px) {
+    #about-me {
+        flex-direction: column; /* Continuar com a direção em coluna */
+        align-items: center; /* Centralizar os itens */
+        gap: 10px; /* Reduzir o gap */
+    }
+
+    section {
+        padding: 20px 5px; /* Ajustar padding ainda mais */
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Reduzir o tamanho da fonte no título */
+    }
+
+    h2 {
+        font-size: 1.4rem; /* Ajustar o tamanho do subtítulo */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Ajustar o tamanho dos títulos menores */
+    }
+
+    html::-webkit-scrollbar {
+        width: 8px; /* Tornar a barra de rolagem mais fina */
+        height: 8px;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        background: linear-gradient(0deg, #ff0000, #ff7f00); /* Alterar cor da barra de rolagem em dispositivos pequenos */
+    }
+}

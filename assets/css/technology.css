@@ -64,3 +64,69 @@
 #technologies ul li:hover::before {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
 }
+
+/* Media Queries para responsividade */
+
+@media screen and (max-width: 1024px) {
+    #technologies ul li {
+        margin: 20px 40px;  /* Diminuir a margem em telas menores */
+    }
+
+    #technologies ul li img {
+        width: 60px;
+        height: 60px;  /* Ajustar o tamanho das imagens */
+    }
+
+    #technologies ul li::before {
+        width: 100px;
+        height: 100px;  /* Ajustar o tamanho do círculo */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #technologies h2 {
+        font-size: 28px;  /* Ajustar o tamanho do título */
+    }
+
+    #technologies ul li {
+        margin: 15px 30px;  /* Ajustar as margens para telas ainda menores */
+    }
+
+    #technologies ul li img {
+        width: 50px;
+        height: 50px;  /* Reduzir mais o tamanho das imagens */
+    }
+
+    #technologies ul li::before {
+        width: 80px;
+        height: 80px;  /* Reduzir o círculo */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #technologies {
+        padding: 60px 0;  /* Ajustar padding para telas muito pequenas */
+    }
+
+    #technologies h2 {
+        font-size: 24px;  /* Reduzir o título */
+    }
+
+    #technologies ul {
+        padding: 30px 0 0 0;  /* Ajustar o padding */
+    }
+
+    #technologies ul li {
+        margin: 15px 20px;  /* Ajustar margens para telas muito pequenas */
+    }
+
+    #technologies ul li img {
+        width: 40px;
+        height: 40px;  /* Ajustar imagens */
+    }
+
+    #technologies ul li::before {
+        width: 60px;
+        height: 60px;  /* Ajustar o círculo */
+    }
+}

@@ -115,3 +115,111 @@ header {
     display: none;
     pointer-events: all;
 }
+
+/* Media Queries para responsividade */
+
+/* Para dispositivos com telas de até 1024px */
+@media screen and (max-width: 1024px) {
+    #navbar {
+        padding: 0px 15px; /* Ajustar o padding para telas menores */
+    }
+
+    #navbar ul li {
+        margin: 0 10px; /* Ajustar a margem dos itens do menu */
+    }
+
+    #navbar ul li a {
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+    }
+
+    #navbar-link {
+        width: 250px; /* Ajustar a largura do link */
+    }
+
+    #navbar-link > ul {
+        flex-direction: column; /* Colocar os itens do navbar-link em coluna */
+        gap: 10px;
+    }
+
+    #phone-nav-link {
+        display: block; /* Mostrar o link do menu para dispositivos móveis */
+    }
+}
+
+/* Para dispositivos com telas de até 768px */
+@media screen and (max-width: 768px) {
+    #navbar {
+        padding: 0px 10px; /* Ajustar o padding */
+        height: 8vh; /* Ajustar a altura do navbar */
+    }
+
+    #navbar h1 {
+        font-size: 1.5rem; /* Reduzir o tamanho do título */
+    }
+
+    #navbar ul li {
+        margin: 0 5px; /* Ajustar a margem dos itens */
+    }
+
+    #navbar ul li a {
+        font-size: 14px; /* Ajustar o tamanho da fonte */
+    }
+
+    #navbar-link {
+        width: 200px; /* Ajustar o tamanho do link */
+    }
+
+    #navbar-link > ul {
+        flex-direction: column; /* Colocar os itens do navbar-link em coluna */
+        gap: 10px;
+    }
+
+    #phone-menu {
+        display: block; /* Mostrar o menu para dispositivos móveis */
+    }
+
+    #phone-nav-link {
+        display: block; /* Mostrar o menu de navegação no celular */
+    }
+}
+
+/* Para dispositivos com telas de até 480px */
+@media screen and (max-width: 480px) {
+    header {
+        height: 10vh; /* Ajustar a altura do header */
+    }
+
+    #navbar {
+        padding: 0px 10px; /* Ajustar o padding para telas muito pequenas */
+        height: 8vh; /* Ajustar a altura do navbar */
+    }
+
+    #navbar h1 {
+        font-size: 1.2rem; /* Ajustar o tamanho do título */
+    }
+
+    #navbar ul li {
+        margin: 0 5px; /* Ajustar a margem dos itens */
+    }
+
+    #navbar ul li a {
+        font-size: 13px; /* Reduzir ainda mais o tamanho da fonte */
+    }
+
+    #navbar-link {
+        width: 180px; /* Ajustar o tamanho do link */
+    }
+
+    #navbar-link > ul {
+        flex-direction: column; /* Colocar os itens do navbar-link em coluna */
+        gap: 8px;
+    }
+
+    #phone-menu {
+        display: block; /* Mostrar o menu para dispositivos móveis */
+    }
+
+    #phone-nav-link {
+        display: block; /* Mostrar o menu de navegação no celular */
+    }
+}

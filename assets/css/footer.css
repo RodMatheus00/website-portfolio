@@ -41,3 +41,52 @@ footer ul li img:hover {
 .footer-text p {
     margin: 0;
 }
+
+/* Media Queries para responsividade */
+
+/* Para dispositivos com telas de até 1024px */
+@media screen and (max-width: 1024px) {
+    footer ul {
+        gap: 10%; /* Reduzir o gap entre os itens */
+    }
+
+    .footer-text {
+        gap: 30%; /* Ajustar o espaçamento do texto no footer */
+    }
+}
+
+/* Para dispositivos com telas de até 768px */
+@media screen and (max-width: 768px) {
+    footer ul {
+        gap: 5%; /* Diminuir ainda mais o gap entre os itens */
+        flex-direction: column; /* Colocar os itens do menu em coluna */
+        align-items: center; /* Centralizar os itens */
+    }
+
+    .footer-text {
+        flex-direction: column; /* Colocar os textos em coluna */
+        gap: 10px;
+    }
+
+    footer ul li img {
+        width: 40px; /* Reduzir o tamanho das imagens para telas menores */
+    }
+}
+
+/* Para dispositivos com telas de até 480px */
+@media screen and (max-width: 480px) {
+    footer ul {
+        gap: 10%; /* Reduzir gap ainda mais */
+        flex-direction: column; /* Itens do footer em coluna */
+        align-items: center; /* Alinhar os itens ao centro */
+    }
+
+    .footer-text {
+        flex-direction: column; /* Colocar os textos em coluna */
+        gap: 5px;
+    }
+
+    footer ul li img {
+        width: 35px; /* Reduzir ainda mais o tamanho das imagens */
+    }
+}

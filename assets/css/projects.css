@@ -128,3 +128,122 @@
     width: 50px;
     height: 50px;
 }
+
+/* Media Queries para responsividade */
+
+/* Para dispositivos com telas de até 1024px */
+@media screen and (max-width: 1024px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr); /* Alterar para 2 colunas */
+        grid-template-rows: 1fr 1.5fr;
+        padding: 70px 20px; /* Ajustar o padding */
+    }
+
+    #projects h2 {
+        font-size: 2.5rem; /* Reduzir o tamanho do título */
+    }
+
+    #projects .project img {
+        width: 90%; /* Ajustar a largura da imagem */
+    }
+
+    .modal-content {
+        width: 80vw; /* Ajustar a largura do modal */
+    }
+
+    .modal-content h3 {
+        font-size: 12px; /* Ajustar o tamanho da fonte do título no modal */
+    }
+}
+
+/* Para dispositivos com telas de até 768px */
+@media screen and (max-width: 768px) {
+    #projects {
+        grid-template-columns: 1fr; /* Alterar para 1 coluna */
+        padding: 50px 20px; /* Ajustar o padding */
+    }
+
+    #projects h2 {
+        font-size: 2rem; /* Reduzir mais o tamanho do título */
+    }
+
+    #projects .project img {
+        width: 100%; /* Imagem ocupa 100% da largura */
+    }
+
+    .modal-content {
+        width: 90vw; /* Ajustar a largura do modal */
+    }
+
+    .modal-content h3 {
+        font-size: 11px; /* Ajustar o tamanho da fonte do título no modal */
+    }
+
+    #modal-tech-icons img {
+        width: 40px;
+        height: 40px; /* Reduzir o tamanho dos ícones de tecnologia no modal */
+    }
+}
+
+/* Para dispositivos com telas de até 430px */
+@media screen and (max-width: 480px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr); /* Alterar para 2 colunas */
+        grid-template-rows: auto; /* Ajustar as linhas para se adaptarem ao conteúdo */
+        padding: 30px 10px; /* Ajustar o padding */
+    }
+
+    #projects h2 {
+        font-size: 1.5rem; /* Diminuir o tamanho do título */
+    }
+
+    #projects .project img {
+        width: 100%; /* Imagem ocupa 100% da largura */
+    }
+
+    .modal-content {
+        width: 95vw; /* Ajustar a largura do modal */
+        height: 90vh; /* Ajustar altura do modal */
+    }
+
+    .modal-content h3 {
+        font-size: 10px; /* Ajustar o tamanho da fonte do título no modal */
+    }
+
+    #modal-tech-icons img {
+        width: 35px;
+        height: 35px; /* Ajustar os ícones para telas muito pequenas */
+    }
+}
+
+/* Para dispositivos com telas de até 390px */
+@media screen and (max-width: 390px) {
+    #projects {
+        grid-template-columns: repeat(3, 1fr); /* Alterar para 2 colunas */
+        grid-template-rows: auto; /* Ajustar as linhas para se adaptarem ao conteúdo */
+        padding: 276px 10px; /* Ajustar o padding */
+    }
+
+    #projects h2 {
+        font-size: 1.5rem; /* Diminuir o tamanho do título */
+    }
+
+    #projects .project img {
+        width: 100%; /* Imagem ocupa 100% da largura */
+    }
+
+    .modal-content {
+        width: 95vw; /* Ajustar a largura do modal */
+        height: 90vh; /* Ajustar altura do modal */
+    }
+
+    .modal-content h3 {
+        font-size: 10px; /* Ajustar o tamanho da fonte do título no modal */
+    }
+
+    #modal-tech-icons img {
+        width: 35px;
+        height: 35px; /* Ajustar os ícones para telas muito pequenas */
+    }
+}
+
