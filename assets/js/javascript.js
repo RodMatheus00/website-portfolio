@@ -167,7 +167,8 @@ document.addEventListener("DOMContentLoaded", function () {
         showItem(newIndex);
 
         // Rola até o início da seção do carrossel
-        carouselSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        carouselSection.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
     });
 
     // Indicadores interativos com rolagem até o início da seção do carrossel
@@ -177,7 +178,8 @@ document.addEventListener("DOMContentLoaded", function () {
             showItem(index);
 
             // Rola até o início da seção do carrossel
-            carouselSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            carouselSection.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
         });
     });
 
