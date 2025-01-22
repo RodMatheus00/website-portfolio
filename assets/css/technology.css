@@ -65,9 +65,9 @@
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 480px) {
     #technologies {
-        padding: 25px 0px 356px 0px;
+        padding: 25px 0px 416px 0px;
     }
 
     #technologies h2 {
@@ -96,4 +96,38 @@
         height: 60px;  /* Ajusta o círculo */
     }
 }
+
+@media screen and (max-width: 390px) {
+    #technologies {
+        padding: 25px 0px 291px 0px;
+    }
+
+    #technologies h2 {
+        font-size: 2rem;  /* Reduz o tamanho do título */
+        padding: 15%;
+    }
+
+    #technologies ul {
+        padding: 30px 0 57px 0;  /* Ajusta o padding */
+        display: grid;  /* Usa grid ao invés de flexbox */
+        grid-template-columns: repeat(3, 1fr);  /* Cria 3 colunas */
+        gap: 10px;  /* Espaçamento entre as colunas e as linhas */
+    }
+
+    #technologies ul li {
+        text-align: center;  /* Garante que as imagens fiquem centralizadas */
+    }
+
+    #technologies ul li img {
+        width: 40px;
+        height: 40px;  /* Ajusta o tamanho das imagens */
+    }
+
+    #technologies ul li::before {
+        width: 60px;
+        height: 60px;  /* Ajusta o círculo */
+    }
+}
+
+
 
