@@ -11,10 +11,9 @@ footer ul {
     margin: 20px 0;
     display: flex;
     justify-content: center;
-    gap: 25%;
 }
 
-footer ul li img {
+footer ul a img {
     width: 50px;
     height: auto;
     transition: transform 0.3s ease;
@@ -42,51 +41,35 @@ footer ul li img:hover {
     margin: 0;
 }
 
-/* Media Queries para responsividade */
-
-/* Para dispositivos com telas de até 1024px */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 390px) {
     footer ul {
-        gap: 10%; /* Reduzir o gap entre os itens */
+        display: flex; /* Alinha os itens na mesma linha */
+        justify-content: flex-end; /* Alinha os itens à direita */
+        padding: 5px;
+        margin: 0;
+        gap: 100px;
+        list-style: none; /* Remove os pontos de lista */
     }
 
-    .footer-text {
-        gap: 30%; /* Ajustar o espaçamento do texto no footer */
-    }
-}
-
-/* Para dispositivos com telas de até 768px */
-@media screen and (max-width: 768px) {
-    footer ul {
-        gap: 5%; /* Diminuir ainda mais o gap entre os itens */
-        flex-direction: column; /* Colocar os itens do menu em coluna */
-        align-items: center; /* Centralizar os itens */
-    }
-
-    .footer-text {
-        flex-direction: column; /* Colocar os textos em coluna */
-        gap: 10px;
+    footer ul li {
+        margin-left: 10px; /* Espaço entre os ícones */
     }
 
     footer ul li img {
-        width: 40px; /* Reduzir o tamanho das imagens para telas menores */
-    }
-}
-
-/* Para dispositivos com telas de até 480px */
-@media screen and (max-width: 480px) {
-    footer ul {
-        gap: 10%; /* Reduzir gap ainda mais */
-        flex-direction: column; /* Itens do footer em coluna */
-        align-items: center; /* Alinhar os itens ao centro */
+        width: 35px; /* Tamanho dos ícones */
     }
 
     .footer-text {
-        flex-direction: column; /* Colocar os textos em coluna */
-        gap: 5px;
-    }
-
-    footer ul li img {
-        width: 35px; /* Reduzir ainda mais o tamanho das imagens */
+        display: flex;
+        font-size: 0.7rem;
+        justify-content: center;
+        gap: 60%;
+        margin-top: 10px;
     }
 }
+
+
+
+
+
+

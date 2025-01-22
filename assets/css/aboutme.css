@@ -14,7 +14,7 @@
 }
 
 #about-me .image-container img {
-    height: 911px;
+    height: 945px;
     width: auto;  /* Garantir que a largura da imagem se ajuste proporcionalmente */
     max-width: 100%; /* Imagem não ultrapassa o contêiner */
     padding: 0px;
