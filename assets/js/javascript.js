@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(changeText, 2000);
 
     // Encontre a seção do carrossel
-    const carouselSection = document.getElementById('carousel'); // Aqui é onde você especifica o ID correto
+    const carouselSection = document.getElementById('carousel');
 
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Função para abrir o modal
     function openModal(projeto) {
         var modal = document.getElementById("modal");
         var modalImage = document.getElementById("modal-image");
@@ -79,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 img.classList.add('tech-icon');
                 modalTechIcons.appendChild(img);
             });
-
         } else {
             modalImage.src = '';
             modalDescription.innerHTML = 'Projeto não encontrado.';
@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "flex";
     }
 
+    // Função para fechar o modal
     function closeModal() {
         var modal = document.getElementById("modal");
         modal.style.display = "none";
@@ -100,10 +101,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    const projectImages = document.querySelectorAll('.project');
-    projectImages.forEach(project => {
-        project.addEventListener('click', function () {
-            const projectId = project.id;
+    // Abertura do modal para imagens do carrossel
+    const projectImagesCarousel = document.querySelectorAll('.carousel-item img');
+    projectImagesCarousel.forEach((img, index) => {
+        img.addEventListener('click', function () {
+            const projectId = `carousel-item-${index + 1}`; // Ajuste do ID de acordo com a ordem das imagens no carrossel
+            openModal(projectId);
+        });
+    });
+
+    // Abertura do modal para imagens dos projetos
+    const projectImages = document.querySelectorAll('.project img');
+    projectImages.forEach((img) => {
+        img.addEventListener('click', function () {
+            const projectId = img.closest('.project').id; // Obtém o ID do projeto clicado
             openModal(projectId);
         });
     });
