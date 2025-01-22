@@ -133,15 +133,18 @@
     display: none;
 }
 
+.carousel {
+    display: none; /* Por padrão, o carousel está oculto */
+}
 
 @media screen and (max-width: 390px) {
     .carousel {
-        display: flex;
-        width: 100%;
+        display: flex; /* O carousel será visível em telas menores */
+        width: 100%; /* Garantir que ocupe toda a largura */
         height: 586px;
-        overflow: hidden;
-        position: relative;
-        border-top: 1px solid rgba(255, 255, 255, 0.151);
+        overflow: hidden; /* Garante que as imagens que saem do contêiner sejam ocultadas */
+        position: relative; /* Necessário para posicionar os controles e indicadores */
+        border-top: 1px solid rgba(255, 255, 255, 0.151); /* Adiciona a borda superior */
     }
 
     #carousel h2 {
@@ -153,87 +156,109 @@
     }
 
     #projects {
-        display: none;
+        display: none; /* Esconder os projetos no mobile */
     }
 
     .carousel-inner {
-        display: flex;
-        transition: transform 0.5s ease;
+        display: flex; /* Exibe os itens horizontalmente, um ao lado do outro */
+        transition: transform 0.5s ease; /* Transição suave quando mudar de imagem */
     }
 
     .carousel-item {
-        min-width: 100%;
-        height: 100%;
+        min-width: 100%; /* Cada item ocupa 100% da largura do carousel */
+        height: 100%;   /* Garante que a altura do item ocupe 100% do contêiner do carrossel */
         display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
+        justify-content: center;  /* Centraliza a imagem horizontalmente */
+        padding: 0;              /* Remover padding que pode interferir */
+        margin: 0;               /* Remover margem */
     }
 
     .carousel-item img {
-        width: 100%;
-        height: 40%;
-        object-fit: cover;
-        border-radius: 8px;
+        width: 100%;            /* A imagem ocupa 100% da largura do item */
+        height: 40%;           /* A imagem ocupa 100% da altura do item */
+        object-fit: cover;      /* A imagem cobre o espaço sem distorcer */
+        border-radius: 8px;     /* Adiciona bordas arredondadas se necessário */
     }
 
     .carousel-item.active {
-        display: flex;
+        display: flex; /* O item ativo será exibido */
     }
 
     /* Estilizando os controles (setas de navegação) */
     .carousel-control-prev,
     .carousel-control-next {
         position: absolute;
-        top: 50%;
+        bottom: 300px; /* Posiciona as setas 20px abaixo da imagem */
         z-index: 10;
-        width: 40px;
-        height: 40px;
-        background-color: rgba(255, 255, 255, 0.7);
+        width: 40px; /* Largura do quadrado */
+        height: 40px; /* Altura do quadrado */
+        background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo suave */
         border: none;
         cursor: pointer;
-        border-radius: 50%;
+        border-radius: 10px; /* Bordas arredondadas */
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translateY(-50%);
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease; /* Efeito de transição suave */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
     }
 
     /* Efeito ao passar o mouse sobre as setas */
     .carousel-control-prev:hover,
     .carousel-control-next:hover {
-        background-color: rgba(255, 255, 255, 0.9);
-        transform: scale(1.1);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 0.9); /* Muda a cor ao passar o mouse */
+        transform: scale(1.1); /* Aumenta um pouco o botão */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+    }
+
+    /* Ajustando as imagens dentro das setas para caberem no quadrado */
+    .carousel-control-prev img,
+    .carousel-control-next img {
+        width: 50px; /* A imagem ocupa 100% da largura do botão */
+        height: 50px; /* A imagem ocupa 100% da altura do botão */
+        object-fit: cover; /* A imagem cobre a área disponível sem distorcer */
+        border-radius: 10px; /* Borda arredondada para a imagem (opcional) */
+        position: absolute;
     }
 
     .carousel-control-prev {
-        left: 10%;
+        left: 10%; /* Posiciona a seta à esquerda */
     }
 
     .carousel-control-next {
-        right: 10%;
+        right: 10%; /* Posiciona a seta à direita */
     }
 
-    /* Remover ícones padrão */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
+    /* Indicadores (os círculos) */
+    .carousel-indicators {
+        position: absolute;
+        bottom: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+    }
+
+    .carousel-indicators .active {
+        background-color: #fff;
+    }
+
+    .desktop-only {
         display: none;
-    }
-
-    /* Estilizando a imagem dentro das setas */
-    .carousel-control-prev-img,
-    .carousel-control-next-img {
-        width: 20px;
-        height: 20px;
-        object-fit: contain;
     }
 }
 
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 769px) {
     .mobile-only {
         display: none;
     }
