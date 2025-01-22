@@ -178,6 +178,7 @@
         width: 100%;
         height: 40%;
         object-fit: cover;
+        border: 1px solid #ffffff27;
         border-radius: 8px;
     }
 
