@@ -47,15 +47,15 @@
 
 @media screen and (max-width: 480px), screen and (max-width: 390px) {
   #presentation {
-    padding: 380px 20px;  /* Ajustar padding para telas pequenas */
+    padding: 380px 20px;  
   }
 
   #presentation h1 {
-    font-size: 2.5rem;  /* Diminuir o tamanho da fonte do título */
+    font-size: 2.5rem;  
   }
 
   #presentation p {
-    font-size: 0.875rem;  /* Reduzir o tamanho da fonte */
-    max-width: 90%;  /* Ajustar a largura máxima do parágrafo */
+    font-size: 0.875rem;  
+    max-width: 90%;  
   }
 }

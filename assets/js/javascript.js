@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Variáveis para o texto que muda dinamicamente
     const words = ["Coffee Lover", "Developer", "Data Analyst", "Problem Solver"];
     let index = 0;
     const title = document.getElementById("about-me-title");
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(changeText, 2000);
 
-    // Encontre a seção do carrossel
     const carouselSection = document.getElementById('carousel');
 
     const links = document.querySelectorAll('a[href^="#"]');
@@ -47,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Função para abrir o modal
     function openModal(projeto) {
         var modal = document.getElementById("modal");
         var modalImage = document.getElementById("modal-image");
@@ -88,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "flex";
     }
 
-    // Função para fechar o modal
     function closeModal() {
         var modal = document.getElementById("modal");
         modal.style.display = "none";
@@ -101,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Abertura do modal para imagens do carrossel
     const projectImagesCarousel = document.querySelectorAll('.carousel-item img');
     projectImagesCarousel.forEach((img, index) => {
         img.addEventListener('click', function () {
@@ -110,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Abertura do modal para imagens dos projetos
     const projectImages = document.querySelectorAll('.project img');
     projectImages.forEach((img) => {
         img.addEventListener('click', function () {
@@ -126,7 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Código do carrossel
     let currentIndex = 0;
     const items = document.querySelectorAll('.carousel-item');
     const totalItems = items.length;
@@ -136,7 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
         inner.style.transform = `translateX(-${index * 100}%)`;
         currentIndex = index;
 
-        // Atualiza os indicadores de navegação
         updateIndicators();
     }
 
@@ -151,7 +143,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Setas de navegação
     document.querySelector('.carousel-control-prev').addEventListener('click', (event) => {
         event.preventDefault();
         const newIndex = (currentIndex - 1 + totalItems) % totalItems;
@@ -168,7 +159,6 @@ document.addEventListener("DOMContentLoaded", function () {
         carouselSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
 
-    // Indicadores interativos
     const indicators = document.querySelectorAll('.carousel-indicators li');
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
@@ -178,10 +168,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Inicializa o carrossel no primeiro item
     showItem(currentIndex);
 
-    // Menu Hamburger
     function toggleMenu() {
         const navbar = document.getElementById("navbar");
         navbar.classList.toggle("open");
