@@ -45,9 +45,9 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-width: 390px) {
   #presentation {
-    padding: 423px 20px;  /* Ajustar padding para telas muito pequenas */
+    padding: 380px 20px;  /* Ajustar padding para telas pequenas */
   }
 
   #presentation h1 {
@@ -55,22 +55,7 @@
   }
 
   #presentation p {
-    font-size: 0.875rem;  /* Reduzir ainda mais o tamanho da fonte */
-    max-width: 90%;  /* Ajustar a largura máxima do parágrafo */
-  }
-}
-
-@media screen and (max-width: 390px) {
-  #presentation {
-    padding: 380px 20px;  /* Ajustar padding para telas muito pequenas */
-  }
-
-  #presentation h1 {
-    font-size: 2.5rem;  /* Diminuir o tamanho da fonte do título */
-  }
-
-  #presentation p {
-    font-size: 0.875rem;  /* Reduzir ainda mais o tamanho da fonte */
+    font-size: 0.875rem;  /* Reduzir o tamanho da fonte */
     max-width: 90%;  /* Ajustar a largura máxima do parágrafo */
   }
 }
