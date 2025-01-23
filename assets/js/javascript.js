@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectImagesCarousel = document.querySelectorAll('.carousel-item img');
     projectImagesCarousel.forEach((img, index) => {
         img.addEventListener('click', function () {
-            const projectId = `carousel-item-${index + 1}`; // Ajuste do ID de acordo com a ordem das imagens no carrossel
+            const projectId = `carousel-item-${index + 1}`;
             openModal(projectId);
         });
     });
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectImages = document.querySelectorAll('.project img');
     projectImages.forEach((img) => {
         img.addEventListener('click', function () {
-            const projectId = img.closest('.project').id; // Obtém o ID do projeto clicado
+            const projectId = img.closest('.project').id;
             openModal(projectId);
         });
     });
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const inner = document.querySelector('.carousel-inner');
 
     function showItem(index) {
-        inner.style.transform = `translateX(-${index * 100}%)`;  // Mover o carousel para a imagem correta
+        inner.style.transform = `translateX(-${index * 100}%)`;
         currentIndex = index;
 
         // Atualiza os indicadores de navegação
@@ -151,14 +151,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Setas de navegação com rolagem até a seção do carrossel
+    // Setas de navegação
     document.querySelector('.carousel-control-prev').addEventListener('click', (event) => {
         event.preventDefault();
         const newIndex = (currentIndex - 1 + totalItems) % totalItems;
         showItem(newIndex);
 
-        // Rola até o início da seção do carrossel
-        carouselSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        carouselSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
 
     document.querySelector('.carousel-control-next').addEventListener('click', (event) => {
@@ -166,46 +165,38 @@ document.addEventListener("DOMContentLoaded", function () {
         const newIndex = (currentIndex + 1) % totalItems;
         showItem(newIndex);
 
-        // Rola até o início da seção do carrossel
-        carouselSection.scrollIntoView({ behavior: 'smooth', block: 'end' });
-
+        carouselSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
 
-    // Indicadores interativos com rolagem até o início da seção do carrossel
+    // Indicadores interativos
     const indicators = document.querySelectorAll('.carousel-indicators li');
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
             showItem(index);
 
-            // Rola até o início da seção do carrossel
-            carouselSection.scrollIntoView({ behavior: 'smooth', block: 'end' });
-
+            carouselSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
     });
 
     // Inicializa o carrossel no primeiro item
     showItem(currentIndex);
 
-    // ** Adicionando funcionalidade do Menu Hamburger **
-
-    // Função para alternar o menu de navegação
+    // Menu Hamburger
     function toggleMenu() {
         const navbar = document.getElementById("navbar");
-        navbar.classList.toggle("open");  // Alterna a classe 'open'
+        navbar.classList.toggle("open");
     }
 
-    // Adicionando o evento de clique para o botão do menu hamburguer
     const hamburguerNavlink = document.getElementById("hamburguer-navlink");
     if (hamburguerNavlink) {
-        hamburguerNavlink.addEventListener("click", toggleMenu);  // Chama a função ao clicar
+        hamburguerNavlink.addEventListener("click", toggleMenu);
     }
 
-    // Fechar o menu quando um item for clicado
     const navLinks = document.querySelectorAll('#navbar ul li a');
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
             const navbar = document.getElementById("navbar");
-            navbar.classList.remove("open");  // Remove a classe 'open' para fechar o menu
+            navbar.classList.remove("open");
         });
     });
 });
