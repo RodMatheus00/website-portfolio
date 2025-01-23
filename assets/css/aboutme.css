@@ -37,7 +37,7 @@
     padding: 0 0 0 100px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
     #about-me {
         flex-direction: column; 
         align-items: center;
@@ -51,7 +51,7 @@
 
     #about-me .image-container img {
         height: 100%;
-        width: 100%;
+        width: 90%;
     }
 
     #about-me .text-container {
