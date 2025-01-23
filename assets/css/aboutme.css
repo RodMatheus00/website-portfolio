@@ -45,7 +45,13 @@
     }
 
     #about-me .image-container {
-        max-width: 80%; 
+        max-width: 100%; 
+        text-align: center;
+    }
+
+    #about-me .image-container img {
+        height: 100%;
+        width: 100%;
     }
 
     #about-me .text-container {
@@ -64,26 +70,47 @@
 }
 
 @media screen and (max-width: 390px) {
-    #about-me .image-container {
-        max-width: 100%; 
-    }
-
     #about-me .image-container img {
         height: 100%;
         width: 94%;
     }
 
-    #about-me .text-container {
-        padding: 10px;
-    }
-
     #about-me h2 {
         font-size: 1.6rem; 
-        padding-left: 0;
     }
 
     #about-me p {
         font-size: 16px;
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #about-me .image-container img {
+        height: 100%;
+        width: 75%;
+    }
+
+    #about-me h2 {
+        font-size: 1.5rem; 
+    }
+
+    #about-me p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #about-me .image-container img {
+        height: 100%;
+        width: 80%;
+    }
+
+    #about-me h2 {
+        font-size: 1.6rem; 
+    }
+
+    #about-me p {
+        font-size: 16px;
     }
 }

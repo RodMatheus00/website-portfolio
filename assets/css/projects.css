@@ -130,295 +130,197 @@
 }
 
 @media screen and (max-width: 480px) {
+    section {
+        padding: 0px 5px 383px 5px
+    }
+  
     .carousel {
-        display: flex;
-        width: 100%;
-        height: 632px;
-        overflow: hidden;
-        position: relative;
-        border-top: 1px solid rgba(255, 255, 255, 0.151);
+      display: flex;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      position: relative;
+      border-top: 1px solid rgba(255, 255, 255, 0.151);
     }
-
+  
     #carousel h2 {
-        font-size: 2rem;
-        padding: 15%;
-        text-align: center;
-        color: #ffffff;
-        grid-column: span 3;
+      font-size: 2rem;
+      padding: 25% 0% 10% 0%;
+      text-align: center;
+      color: #ffffff;
+      grid-column: span 3;
     }
-
+  
     #projects {
-        display: none;
+      display: none;
     }
-
+  
     .carousel-inner {
-        display: flex;
-        transition: transform 0.5s ease;
+      display: flex;
+      transition: transform 0.5s ease;
     }
-
+  
     .carousel-item {
-        min-width: 100%;
-        height: 93%;
-        display: flex;
-        justify-content: center;
+      min-width: 100%;
+      height: 93%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+      height: 72%;
+      object-fit: cover;
+      border: 1px solid #ffffff27;
+      border-radius: 8px;
+    }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      bottom: 30px;
+      z-index: 10;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+  
+    .carousel-control-prev img,
+    .carousel-control-next img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 10px;
+      position: absolute;
+    }
+  
+    .carousel-control-prev {
+      left: 10%;
+    }
+  
+    .carousel-control-next {
+      right: 10%;
+    }
+  
+    .carousel-indicators {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+  
+    .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+    }
+  
+    .carousel-indicators .active {
+      background-color: #fff;
+    }
+  
+    /* Modal styles */
+    .modal-content {
+      background-color: #08000D;
+      padding: 50px 20px 20px 20px;
+      height: 98vh;
+      width: 97vw;
+      border-radius: 8px;
+      display: grid;
+      border: 1px solid #ffffff27;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .modal-content h3 {
+      font-size: 0.7rem;
+    }
+  
+    .modal-content p {
+      font-size: 1rem;
+    }
+  
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+  
+    #modal-tech-icons {
+      justify-content: center;
+    }
+  
+    #modal-tech-icons img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    #modal-image {
+      height: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 390px) {
+    section {
+        padding: 0 5px 309px 5px;
     }
 
     .carousel-item img {
-        width: 100%;
-        height: 40%;
-        object-fit: cover;
-        border: 1px solid #ffffff27;
-        border-radius: 8px;
+      width: 100%;
+      height: 66%;
     }
 
     .carousel-control-prev,
     .carousel-control-next {
-        position: absolute;
-        bottom: 300px;
-        z-index: 10;
-        width: 40px;
-        height: 40px;
-        background-color: rgba(0, 0, 0, 0.7);
-        border: none;
-        cursor: pointer;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .carousel-control-prev:hover,
-    .carousel-control-next:hover {
-        background-color: rgba(255, 255, 255, 0.9);
-        transform: scale(1.1);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .carousel-control-prev img,
-    .carousel-control-next img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        border-radius: 10px;
-        position: absolute;
-    }
-
-    .carousel-control-prev {
-        left: 10%;
-    }
-
-    .carousel-control-next {
-        right: 10%;
+      bottom: 70px;
     }
 
     .carousel-indicators {
-        position: absolute;
-        bottom: 250px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-        gap: 5px;
+      bottom: 50px;
     }
+  }
 
-    .carousel-indicators li {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.5);
-        cursor: pointer;
-    }
-
-    .carousel-indicators .active {
-        background-color: #fff;
-    }
-
-    .modal-content {
-        background-color: #08000D;
-        padding: 50px 20px 20px 20px;
-        height: 98vh;
-        width: 97vw;
-        border-radius: 8px;
-        display: grid;
-        border: 1px solid #ffffff27;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .modal-content h3 {
-        font-size: 0.7rem;
-    }
-
-    .modal-content p {
-        font-size: 1rem;
-    }
-
-    .close {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-    }
-
-    #modal-tech-icons {
-        justify-content: center;
-    }
-
-    #modal-tech-icons img {
-        width: 40px;
-        height: 40px;
-    }
-
-    #modal-image {
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .carousel {
-        display: flex;
-        width: 100%;
-        height: 586px;
-        overflow: hidden;
-        position: relative;
-        border-top: 1px solid rgba(255, 255, 255, 0.151);
-    }
-
-    #carousel h2 {
-        font-size: 2rem;
-        padding: 15%;
-        text-align: center;
-        color: #ffffff;
-        grid-column: span 3;
-    }
-
-    #projects {
-        display: none;
-    }
-
-    .carousel-inner {
-        display: flex;
-        transition: transform 0.5s ease;
+  @media screen and (max-width: 375px) {
+    section {
+        padding: 0 5px 137px 5px;
     }
 
     .carousel-item {
         min-width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
+        height: 90%;
+      }
+
+  }
+
+  @media screen and (max-width: 360px) {
+    section {
+        padding: 0 5px 214px 5px;
     }
 
-    .carousel-item img {
-        width: 100%;
-        height: 40%;
-        object-fit: cover;
-        border: 1px solid #ffffff27;
-        border-radius: 8px;
-    }
+    .carousel-item {
+        min-width: 100%;
+        height: 90%;
+      }
 
-    .carousel-control-prev,
-    .carousel-control-next {
-        position: absolute;
-        bottom: 300px;
-        z-index: 10;
-        width: 40px;
-        height: 40px;
-        background-color: rgba(0, 0, 0, 0.7);
-        border: none;
-        cursor: pointer;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .carousel-control-prev:hover,
-    .carousel-control-next:hover {
-        background-color: rgba(255, 255, 255, 0.9);
-        transform: scale(1.1);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .carousel-control-prev img,
-    .carousel-control-next img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        border-radius: 10px;
-        position: absolute;
-    }
-
-    .carousel-control-prev {
-        left: 10%;
-    }
-
-    .carousel-control-next {
-        right: 10%;
-    }
-
-    .carousel-indicators {
-        position: absolute;
-        bottom: 250px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-    }
-
-    .carousel-indicators li {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.5);
-        cursor: pointer;
-    }
-
-    .carousel-indicators .active {
-        background-color: #fff;
-    }
-
-    .modal-content {
-        background-color: #08000D;
-        padding: 50px 20px 20px 20px;
-        height: 98vh;
-        width: 97vw;
-        border-radius: 8px;
-        display: grid;
-        border: 1px solid #ffffff27;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .modal-content h3 {
-        font-size: 0.7rem;
-    }
-
-    .modal-content p {
-        font-size: 1rem;
-    }
-
-    .close {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-    }
-
-    #modal-tech-icons {
-        justify-content: center;
-    }
-
-    #modal-tech-icons img {
-        width: 40px;
-        height: 40px;
-    }
-
-    #modal-image {
-        height: 200px;
-    }
-}
+  }

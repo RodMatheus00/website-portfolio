@@ -45,9 +45,9 @@
   }
 }
 
-@media screen and (max-width: 480px), screen and (max-width: 390px) {
+@media screen and (max-width: 480px) {
   #presentation {
-    padding: 380px 20px;  
+    padding: 424px 20px;  
   }
 
   #presentation h1 {
@@ -57,5 +57,23 @@
   #presentation p {
     font-size: 0.875rem;  
     max-width: 90%;  
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #presentation {
+    padding: 380px 20px;  
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #presentation {
+    padding: 292px 20px;  
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #presentation {
+    padding: 328px 20px;  
   }
 }
