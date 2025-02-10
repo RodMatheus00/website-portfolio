@@ -8,7 +8,6 @@ Bem-vindo ao meu portfólio! Sou um Analista de Dados, Automatizador de Processo
 - SQL: Consultas em bancos de dados.
 - Python: Análise de dados, automação, scripts e machine learning.
 - JavaScript: Desenvolvimento web e automação de processos via browser.
-- Java: Desenvolvimento de aplicações e scripts.
 
 ## Linguagem de Marcação:
 
