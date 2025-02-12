@@ -47,7 +47,6 @@ footer ul li img:hover {
         padding: 10px;
         margin: 0;
         gap: 125px;
-        justify-content: flex-end;
     }
 
     footer ul li {

@@ -22,9 +22,8 @@ a {
 }
 
 section {
-    padding: 40px 20px;
     margin: 0;
-    border-top: 0px solid #d3d3d3;
+    border-top: 1px solid rgba(255, 255, 255, 0.151);
 }
 
 #about-me {

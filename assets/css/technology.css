@@ -5,14 +5,14 @@
 }
 
 #technologies h2 {
-    font-size: 36px;
-    text-align: center;
-    color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
 }
 
 #technologies ul {
     list-style-type: none;
-    padding: 60px 0px 0px 0px;
+    padding: 60px 0px 50px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -65,14 +65,100 @@
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
 }
 
+@media screen and (max-width: 1280px) { 
+  #technologies {
+    padding: 25px 0px 258px 0px; 
+  }
+
+ #technologies h2 {
+    padding: 6%;
+ } 
+
+  #technologies ul {
+    padding: 28px 0 56px 0;
+    gap: 80px 0px; 
+  }
+}
+
+@media screen and (max-width: 1024px) { 
+  #technologies {
+    padding: 25px 0px 89px 0px; 
+  }
+
+  #technologies ul {
+    padding: 28px 0 56px 0;
+    gap: 80px 0px; 
+  }
+}
+
+@media screen and (max-width: 1024px) { 
+  #technologies {
+    padding: 25px 0px 89px 0px; 
+  }
+
+  #technologies ul {
+    padding: 28px 0 56px 0;
+    gap: 80px 0px; 
+  }
+}
+
+@media screen and (max-width: 853px) { 
+  #technologies {
+    padding: 25px 0px 683px 0px; 
+  }
+
+ #technologies h2 {
+    padding: 15%;
+ } 
+
+  #technologies ul {
+    padding: 28px 0 56px 0;
+    gap: 80px 0px; 
+  }
+}
+
+@media screen and (max-width: 820px) { 
+  #technologies {
+    padding: 25px 0px 408px 0px; 
+  }
+
+ #technologies h2 {
+    padding: 15%;
+ } 
+
+  #technologies ul {
+    padding: 28px 0 56px 0;
+    gap: 80px 0px; 
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  #technologies {
+    padding: 25px 0px 265px 0px; 
+  }
+
+ #technologies h2 {
+    padding: 15%;
+ } 
+
+  #technologies ul {
+    padding: 28px 0 56px 0;
+    gap: 80px 0px; 
+  }
+}
+
 @media screen and (max-width: 480px) {
     #technologies {
-      padding: 25px 0px 416px 0px; 
+      padding: 25px 0px 297px 0px; 
     }
   
     #technologies h2 {
       font-size: 2rem;
       padding: 15%;
+    }
+
+    #technologies h3 {
+      font-size: 1.5rem;
     }
   
     #technologies ul {
@@ -96,20 +182,38 @@
       height: 60px;
     }
   }
+
+  @media screen and (max-width: 414px) { 
+    #technologies {
+      padding: 25px 5px 268px 5px; 
+    }
+  }
+
+  @media screen and (max-width: 412px) { 
+    #technologies {
+      padding: 25px 5px 287px 5px; 
+    }
+  }
   
   @media screen and (max-width: 390px) { 
     #technologies {
-      padding: 25px 0px 303px 0px; 
+      padding: 25px 0px 238px 0px; 
     }
   
     #technologies ul {
       padding: 28px 0 56px 0;
-      gap: 5px; 
+      gap: 10px 0px; 
     }
   }
 
   @media screen and (max-width: 375px) { 
     #technologies {
-      padding: 25px 5px 134px 5px; 
+      padding: 25px 5px 69px 5px; 
+    }
+  }
+  
+  @media screen and (max-width: 360px) { 
+    #technologies {
+      padding: 25px 5px 146px 5px; 
     }
   }
