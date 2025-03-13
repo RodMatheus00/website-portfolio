@@ -27,21 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const techItems = document.querySelectorAll("#technologies ul li");
     techItems.forEach(item => {
-        item.addEventListener("mouseenter", function () {
-            item.classList.add("bright");
-        });
-        item.addEventListener("mouseleave", function () {
-            item.classList.remove("bright");
-        });
+        item.addEventListener("mouseenter", () => item.classList.add("bright"));
+        item.addEventListener("mouseleave", () => item.classList.remove("bright"));
     });
 
     const mathdevTitle = document.getElementById("mathdev");
     if (mathdevTitle) {
-        mathdevTitle.addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+        mathdevTitle.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 
@@ -77,47 +70,39 @@ document.addEventListener("DOMContentLoaded", function () {
                 img.classList.add('tech-icon');
                 modalTechIcons.appendChild(img);
             });
-        } else {
-            modalImage.src = '';
-            modalDescription.innerHTML = 'Projeto não encontrado.';
-        }
 
-        modal.style.display = "flex";
+            modal.style.display = "flex";
+        }
     }
 
     function closeModal() {
-        var modal = document.getElementById("modal");
-        modal.style.display = "none";
+        document.getElementById("modal").style.display = "none";
     }
 
-    window.onclick = function(event) {
-        var modal = document.getElementById("modal");
-        if (event.target == modal) {
+    window.onclick = function (event) {
+        if (event.target === document.getElementById("modal")) {
             closeModal();
         }
-    }
+    };
 
-    const projectImagesCarousel = document.querySelectorAll('.carousel-item img');
-    projectImagesCarousel.forEach((img, index) => {
-        img.addEventListener('click', function () {
-            const projectId = `carousel-item-${index + 1}`;
-            openModal(projectId);
-        });
+    document.querySelectorAll('.carousel-item img').forEach((img, index) => {
+        img.addEventListener('click', () => openModal(`carousel-item-${index + 1}`));
     });
 
-    const projectImages = document.querySelectorAll('.project img');
-    projectImages.forEach((img) => {
-        img.addEventListener('click', function () {
-            const projectId = img.closest('.project').id;
-            openModal(projectId);
+    document.querySelectorAll('.project').forEach(project => {
+        project.addEventListener('click', function () {
+            openModal(project.id);
+        });
+
+        project.querySelector('.overlay').addEventListener('click', function (event) {
+            event.stopPropagation(); // Evita propagação para outros eventos
+            openModal(project.id);
         });
     });
 
     const closeButton = document.querySelector('.close');
     if (closeButton) {
-        closeButton.addEventListener('click', function () {
-            closeModal();
-        });
+        closeButton.addEventListener('click', closeModal);
     }
 
     let currentIndex = 0;
@@ -128,42 +113,30 @@ document.addEventListener("DOMContentLoaded", function () {
     function showItem(index) {
         inner.style.transform = `translateX(-${index * 100}%)`;
         currentIndex = index;
-
         updateIndicators();
     }
 
     function updateIndicators() {
-        const indicators = document.querySelectorAll('.carousel-indicators li');
-        indicators.forEach((indicator, index) => {
-            if (index === currentIndex) {
-                indicator.classList.add('active');
-            } else {
-                indicator.classList.remove('active');
-            }
+        document.querySelectorAll('.carousel-indicators li').forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentIndex);
         });
     }
 
     document.querySelector('.carousel-control-prev').addEventListener('click', (event) => {
         event.preventDefault();
-        const newIndex = (currentIndex - 1 + totalItems) % totalItems;
-        showItem(newIndex);
-
+        showItem((currentIndex - 1 + totalItems) % totalItems);
         carouselSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
 
     document.querySelector('.carousel-control-next').addEventListener('click', (event) => {
         event.preventDefault();
-        const newIndex = (currentIndex + 1) % totalItems;
-        showItem(newIndex);
-
+        showItem((currentIndex + 1) % totalItems);
         carouselSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
 
-    const indicators = document.querySelectorAll('.carousel-indicators li');
-    indicators.forEach((indicator, index) => {
+    document.querySelectorAll('.carousel-indicators li').forEach((indicator, index) => {
         indicator.addEventListener('click', () => {
             showItem(index);
-
             carouselSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
     });
@@ -171,8 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showItem(currentIndex);
 
     function toggleMenu() {
-        const navbar = document.getElementById("navbar");
-        navbar.classList.toggle("open");
+        document.getElementById("navbar").classList.toggle("open");
     }
 
     const hamburguerNavlink = document.getElementById("hamburguer-navlink");
@@ -180,11 +152,9 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburguerNavlink.addEventListener("click", toggleMenu);
     }
 
-    const navLinks = document.querySelectorAll('#navbar ul li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function () {
-            const navbar = document.getElementById("navbar");
-            navbar.classList.remove("open");
+    document.querySelectorAll('#navbar ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById("navbar").classList.remove("open");
         });
     });
 });
