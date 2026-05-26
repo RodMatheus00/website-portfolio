@@ -1,76 +1,126 @@
 # Matheus Rodrigues — Portfolio
 
-Portfolio pessoal atualizado para posicionamento como **Senior Data Engineer**, com foco em:
+Personal portfolio website built to present my work as a **Senior Data Engineer**, with focus on data pipelines, ETL processes, SQL automation, Power BI dashboards, business intelligence, and operational analytics.
 
-- ETL/ELT e data pipelines
-- Python, SQL e modelagem de dados
-- Power BI e Business Intelligence
-- Automação de processos e analytics operacional
+## Live Website
 
-## Estrutura
+Access the portfolio here:
 
-```text
+https://rodmatheus00.github.io/website-portfolio/
+
+## About
+
+I am a Senior Data Engineer focused on transforming raw and operational data into reliable, scalable, and business-ready solutions.
+
+My work involves building ETL processes, automating data flows, creating analytical dashboards, improving SQL routines, integrating systems, and delivering insights that support better operational and strategic decisions.
+
+## Main Focus Areas
+
+- Data Engineering
+- ETL and data pipelines
+- SQL Server automation
+- Python for data processing
+- Power BI and business intelligence
+- Operational dashboards
+- Data validation and reconciliation
+- Process automation
+- Cloud and analytics solutions
+
+## Featured Projects
+
+### Cost Intelligence Dashboard
+
+A business intelligence dashboard designed to analyze operational costs, suppliers, categories, and yearly financial behavior.
+
+**Highlights:**
+
+- Cost overview by supplier and category
+- Yearly comparison
+- Total cost indicators
+- Visual analysis using Power BI
+- Executive dashboard layout
+
+---
+
+### Inventory vs Target Control
+
+Dashboard focused on stock monitoring, entry and exit flow, and comparison between real stock and target stock.
+
+**Highlights:**
+
+- Real stock vs target stock tracking
+- Monthly inflow and outflow analysis
+- Difference indicators
+- Company-level comparison
+- Operational decision support
+
+---
+
+### Urban Mobility BI 3D
+
+A visual analytics concept for public transportation operations, combining mobility indicators with a 3D city dashboard experience.
+
+**Highlights:**
+
+- Operational indicators for public transportation
+- Station and route monitoring
+- Accessibility and occupancy insights
+- Visual storytelling for urban mobility data
+- BI-focused interface concept
+
+---
+
+### Fare Collection Integration Automation
+
+Technical automation project involving fare collection data integration between Oracle and SQL Server environments.
+
+**Highlights:**
+
+- Oracle data extraction
+- SQL Server staging process
+- ETL validation
+- Historical data correction
+- Fare product reconciliation
+- Automated SQL Server Agent job adjustment
+- Technical documentation and validation scripts
+
+---
+
+### WhatsApp Budget Bot
+
+Automation project for generating customer budgets directly through WhatsApp conversations.
+
+**Highlights:**
+
+- Automated customer interaction
+- Product quantity recognition
+- Budget calculation
+- PDF budget generation
+- WhatsApp-based workflow
+- Python automation
+
+## Technologies
+
+- Python
+- SQL Server
+- Oracle
+- Power BI
+- ETL
+- Data Modeling
+- Business Intelligence
+- Process Automation
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+## Project Structure
+
+```txt
 .
 ├── index.html
 ├── assets/
-│   ├── css/index.css
-│   ├── js/javascript.js
+│   ├── css/
+│   ├── js/
 │   └── images/
-│       ├── me.jpg
-│       ├── icon/
-│       └── projetos/
-```
-
-## Como rodar localmente
-
-Como é um projeto estático, basta abrir o `index.html` no navegador.
-
-Também é possível subir um servidor local:
-
-```bash
-python -m http.server 8080
-```
-
-Depois acesse:
-
-```text
-http://localhost:8080
-```
-
-## O que foi atualizado
-
-- Posicionamento alterado de **Data Analyst / MathDev** para **Senior Data Engineer**.
-- Hero section modernizada com CTA para LinkedIn e projetos.
-- Conteúdo reescrito em inglês para uso profissional em LinkedIn/portfólio internacional.
-- Layout responsivo refeito com HTML, CSS e JavaScript puro.
-- Removida dependência visual antiga de Bootstrap no HTML principal.
-- Seções novas: About, How I help, Selected projects, Stack e Contact.
-- Cards de projeto com modal acessível usando `<dialog>`.
-- Stack ajustada para ferramentas mais coerentes com dados: Python, SQL, SQL Server, Oracle, Power BI, Excel, RPA e GitHub.
-- SEO básico e Open Graph adicionados no `<head>`.
-
-## Publicação no GitHub Pages
-
-1. Substitua os arquivos atuais do repositório por esta versão.
-2. Faça commit e push na branch principal.
-3. Se o GitHub Pages já estiver configurado, a atualização será publicada automaticamente.
-
-Exemplo:
-
-```bash
-git add .
-git commit -m "refactor: modernize data engineering portfolio"
-git push origin main
-```
-
-## Atualização com novos projetos
-
-Esta versão também adiciona novos cards recentes ao portfólio:
-
-- Cost Intelligence Dashboard
-- Inventory vs Target Control
-- Urban Mobility BI 3D
-- Fare Collection Integration Automation
-- WhatsApp Budget Bot
-
-As imagens novas foram montadas como capas visuais para portfólio, reaproveitando os prints enviados e criando uma imagem própria para a automação de integração. Antes de publicar publicamente, revise se há nomes de clientes, valores reais ou informações sensíveis que precisem ser anonimizadas.
+└── README.md
