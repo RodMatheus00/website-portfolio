@@ -1,198 +1,250 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATHDEV | DATA ANALYST</title>
-    
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/aboutme.css">
-    <link rel="stylesheet" href="assets/css/presentation.css">
-    <link rel="stylesheet" href="assets/css/projects.css">
-    <link rel="stylesheet" href="assets/css/technology.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Matheus Rodrigues, Senior Data Engineer focused on ETL, data pipelines, SQL, Python, Power BI, automation and cloud analytics." />
+  <meta name="author" content="Matheus Rodrigues" />
+  <meta property="og:title" content="Matheus Rodrigues | Senior Data Engineer" />
+  <meta property="og:description" content="ETL, data pipelines, Python, SQL, Power BI, automation and analytics solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/projetos/power bi 1.1.png" />
+  <title>Matheus Rodrigues | Senior Data Engineer</title>
+
+  <link rel="stylesheet" href="assets/css/index.css" />
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
-            <h1 id="mathdev" onclick="scrollToTop()">MATH<span class="dev">DEV</span></h1>
-            <div id="hamburguer-navlink" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <ul id="navbar-links">
-                <li><a href="#about-me" title="Sobre Mim">ABOUT</a></li>
-                <li class="mobile-only"><a href="#carousel" title="Carousel">PROJECTS</a></li>
-                <li class="desktop-only"><a href="#projects" title="Projetos">PROJECTS</a></li>
-                <li><a href="#technologies" title="Tecnologias">TECHNOLOGIES</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-        
-    <section id="presentation" style="background-image: url('assets/images/icon/bg.webp');">
-        <h1>MATHDEV</h1>
-    </section>   
-    
+  <header class="site-header" data-header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Back to top">
+        <span class="brand-mark">MR</span>
+        <span class="brand-text">Matheus Rodrigues</span>
+      </a>
 
-    <section id="about-me">
-        <div class="image-container">
-            <img src="assets/images/me.jpg" alt="Imagem de Perfil de Matheus">
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" data-nav-links>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-shell">
+      <div class="hero-content">
+        <p class="eyebrow">Senior Data Engineer • ETL & Data Pipelines • BI Automation</p>
+        <h1>I build reliable data products that turn operations into decisions.</h1>
+        <p class="hero-description">
+          I work across Python, SQL, Power BI and automation to design pipelines, dashboards and analytics workflows that are clear, maintainable and useful for real business decisions.
+        </p>
+
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button button-primary" href="https://linkedin.com/in/matheusrodrigues-analista" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+          <a class="button button-secondary" href="#projects">View projects</a>
         </div>
-        <div class="text-container">
-            <h2 id="about-me-title">
-                <span>Coffee Lover</span>
-            </h2>
-            <p>Hello! I'm Matheus, a data analyst and a true technology enthusiast. I transform data into valuable insights to help businesses make strategic decisions. Additionally, I'm an automation specialist and a web developer in my spare time, always looking for ways to optimize processes and create innovative solutions.<br>Let's chat?</p>
+      </div>
+
+      <aside class="hero-card" aria-label="Professional snapshot">
+        <div class="profile-frame">
+          <img src="assets/images/me.png" alt="Matheus Rodrigues" />
         </div>
+        <div class="hero-card-content">
+          <p class="card-kicker">Current focus</p>
+          <h2>Data Engineering, BI and process automation</h2>
+          <p>Designing dashboards, data models, SQL routines, ETL flows and automation layers that reduce manual work and improve visibility.</p>
+        </div>
+      </aside>
     </section>
 
-    <section id="projects">
-        <h2>DIVE INTO MY WORLD</h2>
-        
-        <div id="power-bi-1" class="project" data-title="POWERBI" data-project-title="ABASTECIMENTO E HODÔMETRO" data-description="Acompanhe os dados operacionais dos ônibus, incluindo informações sobre passagens vendidas, viagens realizadas e quilometragem rodada. Analise o desempenho da frota, o volume de passageiros e a eficiência das viagens, ajudando a otimizar a operação e melhorar o serviço." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 1.1.png" data-tech-icons="sql,powerbi">
-            <img src="assets/images/projetos/power bi 1.png" alt="power-bi-1">
-            <div class="overlay">Dados Operacionais</br>Power BI</div>
-        </div>    
-        <div id="power-bi-2" class="project" data-title="POWERBI" data-project-title="Titulos" data-description="Acompanhe a gestão financeira da empresa com o controle de Títulos a Pagar. Monitore prazos, valores e vencimentos, garantindo um planejamento eficiente e o equilíbrio das obrigações financeiras ao longo do tempo." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 2.1.png" data-tech-icons="sql,powerbi">
-            <img src="assets/images/projetos/power bi 2.png" alt="power-bi-2">
-            <div class="overlay">Titulos a Pagar </br>Power BI</div>
-        </div>
-        <div id="power-bi-3" class="project" data-title="POWERBI" data-project-title="Financeiro - BeTre" data-description="Acompanhe a média de movimentação financeira do seu negócio, incluindo despesas, receitas, contas a pagar e contas a receber. Analise o fluxo de caixa com base nas transações, identifique tendências e otimize a gestão financeira ao longo do tempo." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 3.1.png" data-tech-icons="sql,powerbi">
-            <img src="assets/images/projetos/power bi 3.png" alt="power-bi-3">
-            <div class="overlay">Financeiro - BeTre</br>Power BI</div>
-        </div>
-        <div id="power-bi-4" class="project" data-title="POWERBI" data-project-title="CUSTOS POR EQUIPAMENTO" data-description="Visualize e analise os custos relacionados a cada equipamento, com informações detalhadas sobre manutenção, depreciação, consumo de recursos e outros gastos operacionais. Acompanhe indicadores de custos, performance de equipamentos e eficiência de forma clara e interativa, facilitando a tomada de decisões para otimização de recursos." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 4.1.png" data-tech-icons="sql,powerbi">
-            <img src="assets/images/projetos/power bi 4.png" alt="power-bi-4">
-            <div class="overlay">Custos por Equipamento </br>Power BI</div>
-        </div>
-        <div id="power-bi-5" class="project" data-title="POWERBI" data-project-title="CUSTOS WEB COMMERCE E APP" data-description="Acompanhe e analise os custos envolvidos na compra de passagens, tanto por aplicativo quanto por site. Avalie indicadores de desempenho, como custos por transação, taxas associadas, canais de venda mais utilizados e análise detalhada de cada plataforma (app e web)." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 5.1.png" data-tech-icons="python,sql,powerbi">
-            <img src="assets/images/projetos/power bi 5.png" alt="power-bi-5">
-            <div class="overlay">Compras de Créditos </br>Power BI</div>
-        </div>
-        <div id="site-6" class="project" data-title="SITE" data-project-title="PORTAL POWER BI" data-description="Explore todos os relatórios e dashboards criados para fornecer insights valiosos e facilitar a análise de dados. Nosso portal centraliza os Power BI desenvolvidos, oferecendo uma visão clara e interativa sobre diversos temas, como desempenho financeiro, custos, vendas e muito mais. Acesse informações detalhadas e indicadores estratégicos de forma prática, promovendo uma gestão mais eficiente e orientada por dados." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/site 6.1.png" data-tech-icons="html,css,javascript">
-            <img src="assets/images/projetos/site 6.png" alt="site-6">
-            <div class="overlay">Portal BI </br> SITE</div>
-        </div>
-    </section>
-    
-    
-    <section id="carousel">
-        <h2>DIVE INTO MY WORLD</h2>
-        <div id="carouselExampleIndicators" class="carousel slide carousel-container" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" id="carousel-item-1" data-title="POWERBI" data-project-title="ABASTECIMENTO E HODÔMETRO" data-description="Monitore o hodômetro e o consumo de combustível dos ônibus, acompanhando a quilometragem rodada e a eficiência no consumo de combustível. Analise os dados para otimizar o uso da frota, controlar custos operacionais e garantir o bom desempenho dos veículos." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 1.1.png" data-tech-icons="sql,powerbi">
-                    <img class="d-block w-100" src="assets/images/projetos/power bi 1.png" alt="First slide" onclick="openModal('carousel-item-1')">
-                </div>
-                <div class="carousel-item" id="carousel-item-2" data-title="POWERBI" data-project-title="Titulos" data-description="Acompanhe a gestão financeira da empresa com o controle de Títulos a Pagar. Monitore prazos, valores e vencimentos, garantindo um planejamento eficiente e o equilíbrio das obrigações financeiras ao longo do tempo." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 2.1.png" data-tech-icons="sql,powerbi">
-                    <img class="d-block w-100" src="assets/images/projetos/power bi 2.png" alt="Second slide" onclick="openModal('carousel-item-2')">
-                </div>
-                <div class="carousel-item" id="carousel-item-3" data-title="POWERBI" data-project-title="Financeiro - BeTre" data-description="Acompanhe a média de consumo de insumos dos veículos, como combustível, óleo e outros itens essenciais. Analise o desempenho dos veículos com base no uso de recursos, identifique tendências e otimize os custos operacionais ao longo do tempo." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 3.1.png" data-tech-icons="sql,powerbi">
-                    <img class="d-block w-100" src="assets/images/projetos/power bi 3.png" alt="Third slide" onclick="openModal('carousel-item-3')">
-                </div>
-                <div class="carousel-item" id="carousel-item-4" data-title="POWERBI" data-project-title="CUSTOS POR EQUIPAMENTO" data-description="Visualize e analise os custos relacionados a cada equipamento, com informações detalhadas sobre manutenção, depreciação, consumo de recursos e outros gastos operacionais. Acompanhe indicadores de custos, performance de equipamentos e eficiência de forma clara e interativa, facilitando a tomada de decisões para otimização de recursos." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 4.1.png" data-tech-icons="sql,powerbi">
-                    <img class="d-block w-100" src="assets/images/projetos/power bi 4.png" alt="Fourth slide" onclick="openModal('carousel-item-4')">
-                </div>
-                <div class="carousel-item" id="carousel-item-5" data-title="POWERBI" data-project-title="CUSTOS WEB COMMERCE E APP" data-description="Acompanhe e analise os custos envolvidos na compra de passagens, tanto por aplicativo quanto por site. Avalie indicadores de desempenho, como custos por transação, taxas associadas, canais de venda mais utilizados e análise detalhada de cada plataforma (app e web)." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/power bi 5.1.png" data-tech-icons="python,sql,powerbi">
-                    <img class="d-block w-100" src="assets/images/projetos/power bi 5.png" alt="Fifth slide" onclick="openModal('carousel-item-5')">
-                </div>
-                <div class="carousel-item" id="carousel-item-6" data-title="SITE" data-project-title="PORTAL POWER BI" data-description="Explore todos os relatórios e dashboards criados para fornecer insights valiosos e facilitar a análise de dados. Nosso portal centraliza os Power BI desenvolvidos, oferecendo uma visão clara e interativa sobre diversos temas, como desempenho financeiro, custos, vendas e muito mais. Acesse informações detalhadas e indicadores estratégicos de forma prática, promovendo uma gestão mais eficiente e orientada por dados." data-observation="<br>Obs.: Dados fictícios." data-image="assets/images/projetos/site 6.1.png" data-tech-icons="html,css,javascript">
-                    <img class="d-block w-100" src="assets/images/projetos/site 6.png" alt="Sixth slide" onclick="openModal('carousel-item-6')">
-                </div>
-            </div>
-            <a class="carousel-control-prev" role="button" data-slide="prev">
-                <img src="assets/images/icon/before.png" alt="Previous" class="carousel-control-prev-icon">
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" role="button" data-slide="next">
-                <img src="assets/images/icon/next.png" alt="Next" class="carousel-control-next-icon">
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </section>
-    
-    
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img id="modal-image" src="" alt="Projeto detalhado">
-            <div id="modal-description"></div>
-            <div id="modal-tech-icons" class="tech-icons"></div>
-        </div>
-    </div>    
-
-    <section id="technologies">
-        <h2>TECHNOLOGIES I USE</h2>
-        <ul>
-            <!-- Linguagens de Programação -->
-            <li><img src="assets/images/icon/python.png" alt="Python" /></li>
-            <li><img src="assets/images/icon/r.png" alt="R" /></li>
-            <li><img src="assets/images/icon/javascript.png" alt="JavaScript" /></li>
-        
-            <!-- Bibliotecas/Frameworks -->
-            <li><img src="assets/images/icon/react.png" alt="React" /></li>
-        
-            <!-- Banco de Dados -->
-            <li><img src="assets/images/icon/sql.png" alt="SQL" /></li>
-            <li><img src="assets/images/icon/sqlserver.png" alt="SQLServer" /></li>
-            <li><img src="assets/images/icon/oracle.png" alt="Oracle" /></li>
-        
-            <!-- Ferramentas de Análise de Dados -->
-            <li><img src="assets/images/icon/excel.png" alt="Excel" /></li>
-            <li><img src="assets/images/icon/powerbi.png" alt="PowerBI" /></li>
-        
-            <!-- Automação/RPA -->
-            <li><img src="assets/images/icon/uipath.png" alt="UIPath" /></li>
-        
-            <!-- Design/UI -->
-            <li><img src="assets/images/icon/figma.png" alt="Figma" /></li>
-        
-            <!-- DevOps/Cloud -->
-            <li><img src="assets/images/icon/github.png" alt="GitHub" /></li>
-            <li><img src="assets/images/icon/aws.png" alt="AWS" /></li>
-        </ul>
+    <section class="metrics section-shell" aria-label="Portfolio highlights">
+      <article>
+        <strong>ETL/ELT</strong>
+        <span>Data ingestion, transformation and pipeline reliability.</span>
+      </article>
+      <article>
+        <strong>BI</strong>
+        <span>Power BI dashboards focused on operational and financial clarity.</span>
+      </article>
+      <article>
+        <strong>SQL</strong>
+        <span>Queries, stored routines, modeling and performance tuning.</span>
+      </article>
+      <article>
+        <strong>Automation</strong>
+        <span>Python and RPA workflows to remove repetitive work.</span>
+      </article>
     </section>
 
-    <footer>
-        <hr class="linha-2">
-        <ul>
-            <li>
-                <a href="https://linkedin.com/in/matheusrodrigues-analista" target="_blank" title="LinkedIn">
-                    <img src="assets/images/icon/linkedin.png" alt="linkedin">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/RodMatheus00" target="_blank" title="GitHub">
-                    <img src="assets/images/icon/github.png" alt="github">
-                </a>
-            </li>
-            <li>
-                <a href="https://instagram.com/eiimathe/" target="_blank" title="Instagram">
-                    <img src="assets/images/icon/instagram.png" alt="instagram">
-                </a>
-            </li>
-        </ul>
-        <hr class="linha-2">
-        <div class="footer-text">
-            <p>&copy;2025 MIT COPYRIGHT</p>
-            <p>MATHDEV</p>
-        </div>
-    </footer>
-    
+    <section id="about" class="about section-shell section-grid">
+      <div>
+        <p class="section-label">About</p>
+        <h2>Data work with engineering discipline and business context.</h2>
+      </div>
+      <div class="section-copy">
+        <p>
+          I am Matheus Rodrigues, a data professional focused on transforming fragmented information into reliable analytics products. My work combines data engineering, business intelligence and automation to help teams understand what is happening, where the bottlenecks are and what decisions should come next.
+        </p>
+        <p>
+          My strongest areas are Python, SQL, Power BI, data modeling, process automation and integrations. I like projects where the result is not just a beautiful dashboard, but a sustainable data flow that people can trust.
+        </p>
+      </div>
+    </section>
 
-    <script src="assets/js/javascript.js"></script>
+    <section id="work" class="work section-shell">
+      <div class="section-heading">
+        <p class="section-label">How I help</p>
+        <h2>From raw data to operational intelligence.</h2>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <span class="work-icon">01</span>
+          <h3>Data pipelines</h3>
+          <p>Extraction, transformation, validation and delivery of data with clear rules and maintainable routines.</p>
+        </article>
+        <article class="work-card">
+          <span class="work-icon">02</span>
+          <h3>Business intelligence</h3>
+          <p>Power BI dashboards and data models designed for managers, operations and financial monitoring.</p>
+        </article>
+        <article class="work-card">
+          <span class="work-icon">03</span>
+          <h3>SQL & data modeling</h3>
+          <p>Queries, stored procedures, analytical views and database structures aligned with reporting needs.</p>
+        </article>
+        <article class="work-card">
+          <span class="work-icon">04</span>
+          <h3>Automation</h3>
+          <p>Python, RPA and integration flows that reduce manual processes and improve operational consistency.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-shell">
+      <div class="section-heading projects-heading">
+        <div>
+          <p class="section-label">Selected projects</p>
+          <h2>Data, dashboards and automation systems.</h2>
+        </div>
+        <p>A selection of recent dashboards, automation flows and data engineering projects. Sensitive operational details should be anonymized before public sharing.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card" data-project-title="Cost Intelligence Dashboard" data-project-category="Power BI • Cost Analytics" data-project-image="assets/images/projetos/project-costs-dashboard.jpg" data-project-description="Power BI dashboard for cost analysis by supplier, category and time period. Designed to make operational spending easier to monitor, compare and explain to decision-makers." data-project-stack="Power BI, Cost Analytics, Data Modeling, SQL">
+          <img src="assets/images/projetos/project-costs-dashboard.jpg" alt="Cost intelligence Power BI dashboard" />
+          <div class="project-content">
+            <span>Power BI • Cost Analytics</span>
+            <h3>Cost Intelligence Dashboard</h3>
+            <p>Supplier, category and spending analysis for operational cost control.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-title="Inventory vs Target Control" data-project-category="Power BI • Operations" data-project-image="assets/images/projetos/project-inventory-stock-target.jpg" data-project-description="Inventory monitoring dashboard comparing current stock against targets, highlighting entry and exit flows, financial differences and operational deviations." data-project-stack="Power BI, Inventory KPIs, SQL, Operations Analytics">
+          <img src="assets/images/projetos/project-inventory-stock-target.jpg" alt="Inventory versus target Power BI dashboard" />
+          <div class="project-content">
+            <span>Power BI • Operations</span>
+            <h3>Inventory vs Target Control</h3>
+            <p>Stock goals, inventory flow and deviation tracking.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-title="BI Portal" data-project-category="Analytics Portal" data-project-image="assets/images/projetos/site 6.1.png" data-project-description="Portal concept to centralize dashboards and make analytical content easier to access. Designed for teams that need a single place to find reports and business indicators." data-project-stack="HTML, CSS, JavaScript, BI Experience">
+          <img src="assets/images/projetos/site 6.png" alt="BI portal interface" />
+          <div class="project-content">
+            <span>Analytics Portal</span>
+            <h3>BI Portal</h3>
+            <p>Centralized access to dashboards, reports and business metrics.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-title="Urban Mobility BI 3D" data-project-category="BI • 3D Analytics" data-project-image="assets/images/projetos/project-urban-mobility-3d.jpg" data-project-description="Conceptual BI experience for public transport operations, combining route visualization, station indicators, accessibility metrics, dwell time and operational alerts in a 3D-style interface." data-project-stack="Power BI, UX for BI, Mobility Analytics, Data Visualization">
+          <img src="assets/images/projetos/project-urban-mobility-3d.jpg" alt="Urban mobility 3D analytics dashboard" />
+          <div class="project-content">
+            <span>BI • 3D Analytics</span>
+            <h3>Urban Mobility BI 3D</h3>
+            <p>Routes, stations, alerts and accessibility indicators in a 3D BI view.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-title="Fare Collection Integration Automation" data-project-category="Oracle • SQL Server • ETL" data-project-image="assets/images/projetos/project-oracle-fare-automation.jpg" data-project-description="Automation project for integrating fare collection data from Oracle into SQL Server, with staging, validation, stored procedures, reconciliation rules and reporting consistency checks." data-project-stack="Oracle, SQL Server, SQL Agent, ETL, Stored Procedures">
+          <img src="assets/images/projetos/project-oracle-fare-automation.jpg" alt="Fare collection integration automation architecture" />
+          <div class="project-content">
+            <span>Oracle • SQL Server • ETL</span>
+            <h3>Fare Collection Integration Automation</h3>
+            <p>Automated ingestion, validation and reconciliation for revenue reporting.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-title="WhatsApp Budget Bot" data-project-category="Python • Automation" data-project-image="assets/images/projetos/project-whatsapp-budget-bot.jpg" data-project-description="Conversational automation for budget requests through WhatsApp, including catalog guidance, product quantity parsing, quotation summary and PDF generation for the customer." data-project-stack="Python, WhatsApp Automation, PDF Generation, Conversational Flow">
+          <img src="assets/images/projetos/project-whatsapp-budget-bot.jpg" alt="WhatsApp budget bot automation preview" />
+          <div class="project-content">
+            <span>Python • Automation</span>
+            <h3>WhatsApp Budget Bot</h3>
+            <p>Catalog guidance, quote summary and PDF generation by chat.</p>
+          </div>
+        </article>
+    
+      </div>
+    </section>
+
+    <section id="stack" class="stack section-shell section-grid">
+      <div>
+        <p class="section-label">Stack</p>
+        <h2>Tools I use to build data solutions.</h2>
+      </div>
+
+      <div class="stack-grid" aria-label="Technology stack">
+        <article class="stack-item"><img src="assets/images/icon/python.png" alt="Python" /><span>Python</span></article>
+        <article class="stack-item"><img src="assets/images/icon/sql.png" alt="SQL" /><span>SQL</span></article>
+        <article class="stack-item"><img src="assets/images/icon/sqlserver.png" alt="SQL Server" /><span>SQL Server</span></article>
+        <article class="stack-item"><img src="assets/images/icon/oracle.png" alt="Oracle" /><span>Oracle</span></article>
+        <article class="stack-item"><img src="assets/images/icon/powerbi.png" alt="Power BI" /><span>Power BI</span></article>
+        <article class="stack-item"><img src="assets/images/icon/excel.png" alt="Excel" /><span>Excel</span></article>
+        <article class="stack-item"><img src="assets/images/icon/uipath.png" alt="UiPath" /><span>RPA</span></article>
+        <article class="stack-item"><img src="assets/images/icon/github.png" alt="GitHub" /><span>GitHub</span></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-shell">
+      <div>
+        <p class="section-label">Contact</p>
+        <h2>Let’s build something useful with your data.</h2>
+        <p>Open to conversations about data engineering, Power BI, ETL routines, SQL, automation and analytics projects.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button button-primary" href="https://linkedin.com/in/matheusrodrigues-analista" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="button button-secondary" href="https://github.com/RodMatheus00" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Matheus Rodrigues. Built for data, automation and business clarity.</p>
+  </footer>
+
+  <dialog class="project-modal" data-project-modal aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="Close project details" data-modal-close>×</button>
+    <img data-modal-image src="" alt="" />
+    <div class="modal-body">
+      <p class="section-label" data-modal-category></p>
+      <h2 id="modal-title" data-modal-title></h2>
+      <p data-modal-description></p>
+      <div class="modal-stack" data-modal-stack></div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/javascript.js"></script>
 </body>
 
 </html>
